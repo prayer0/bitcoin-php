@@ -264,7 +264,7 @@ class Network implements NetworkInterface
      * @throws MissingBech32Prefix
      * @see NetworkInterface::getSegwitBech32Prefix()
      */
-    public function getSegwitBech32Prefix(): string
+    public function getSegwitBech32Prefix()
     {
         return $this->getBech32Prefix(self::BECH32_PREFIX_SEGWIT);
     }
