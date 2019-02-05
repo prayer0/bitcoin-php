@@ -33,7 +33,7 @@ interface NetworkInterface
      *
      * @return string
      */
-    public function getSegwitBech32Prefix(): string;
+    public function getSegwitBech32Prefix();
 
     /**
      * Return the p2sh byte for the network
