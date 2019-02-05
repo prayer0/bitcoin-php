@@ -24,7 +24,7 @@ class Checker extends CheckerBase
      * @param int $sigVersion
      * @return BufferInterface
      */
-    public function getSigHash(ScriptInterface $script, int $sigHashType, int $sigVersion): BufferInterface
+    public function getSigHash(ScriptInterface $script, int $sigHashType, int $sigVersion)
     {
         $cacheCheck = $sigVersion . $sigHashType . $script->getBuffer()->getBinary();
         if (!isset($this->sigHashCache[$cacheCheck])) {
