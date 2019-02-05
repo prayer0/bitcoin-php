@@ -50,5 +50,5 @@ abstract class CheckerCreatorBase
      * @param TransactionOutputInterface $txOut
      * @return CheckerBase
      */
-    abstract public function create(TransactionInterface $tx, int $nInput, TransactionOutputInterface $txOut): CheckerBase;
+    abstract public function create(TransactionInterface $tx, int $nInput, TransactionOutputInterface $txOut);
 }
